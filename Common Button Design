@@ -1,38 +1,49 @@
 
 <style>
-    .subsribe-button{
-        background-color:#c12222;
-        color:white;
-        border:none;
-        height:40px;
-        width:103px;
-        border-radius:2px;
-        margin-right:8px;
+    .subsribe-button {
+        background-color: #c12222;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        margin-right: 8px;
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .join-button {
         background-color: white;
         color: #0774dc;
-        height: 37px;
-        width: 65px;
         border-color: #0774dc;
         border-style: solid;
         border-width: 1px;
         font-size: 15px;
         border-radius: 2px;
-        margin-right:8px;
+        margin-right: 8px;
+        cursor: pointer;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 9px;
+        padding-bottom: 9px;
     }
 
-    .tweet-button{
-        background-color:#0094ff;
-        border:none;
-        border-radius:18px;
-        height:36px;
-        width:80px;
-        font-weight:bold;
-        font-size:15px;
-        color:white;
-        margin-right:8px;
+    .tweet-button {
+        background-color: #0094ff;
+        border: none;
+        border-radius: 18px;
+        height: 36px;
+        width: 80px;
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        margin-right: 8px;
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .uber-button{
@@ -107,14 +118,94 @@
         font-weight:bold;
         font-size:15px;
         border-radius:20px;
+        margin-left:10px;
+        margin-bottom:20px;
     }
+
+    .join-button:hover{
+        background-color: #0774dc;
+        color:white;
+    }
+
+    .pushable {
+        background: hsl(340deg 100% 32%);
+        border-radius: 12px;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline-offset: 4px;
+    }
+
+    .front {
+        display: block;
+        padding: 12px 42px;
+        border-radius: 12px;
+        font-size: 1.25rem;
+        background: hsl(345deg 100% 47%);
+        color: white;
+        transform: translateY(-6px);
+    }
+
+    .pushable:active .front {
+        transform: translateY(-2px);
+    }
+
+    .magicalButton {
+        background: #ad1313;
+        border: none;
+        padding: 0px;
+    }
+
+    .magicalFront {
+        display: block;
+        background: red;
+        color: white;
+        padding: 12px 30px;
+        transform: translateY(-6px);
+    }
+
+    .magicalButton:active .magicalFront {
+        transform: translateY(-2px);
+    }
+
+
+    .strechButton{
+        background:green;
+        height:50px;
+        width:50px;
+        transition: width 2s;
+        border:none;
+    }
+
+    .strechButton:hover{
+        width: 100px;
+    }
+
+    <!--
+    - padding: 12px 42px;
+    12px - top & bottom
+    42px - left & right
+
+    - display: block;
+    This makes the element a block-level element, meaning
+    it will start on a new line and occupy the full width available.
+
+    - transform: translateY(-4px);
+    Moves the element up by 4px along the Y-axis from its original position.
+
+    -.pushable:active .front 
+    Bound them together, make a effect
+
+    -->
+
+    
 </style>
 
 
 <button class="subsribe-button">SUBSCRIBE</button>
 <button class="join-button">JOIN</button>
 <button class="tweet-button">Tweet</button>
-
+<p></p>
 <button class="uber-button">Request now</button>
 <button class="amazon-button">Add to Cart</button>
 <button class="github-button">Sign up</button>
@@ -122,3 +213,19 @@
 <button class="boostDownload-button">Download</button>
 <button class="linkinApply-button">Apply on company website</button>
 <button class="linkinSave-button">Save</button>
+
+<button class="pushable">
+    <span class="front">
+        Push me
+    </span>
+</button>
+
+<button class="magicalButton">
+    <span class="magicalFront">
+        Push
+    </span>
+</button>
+
+<button class="strechButton">
+    strech
+</button>

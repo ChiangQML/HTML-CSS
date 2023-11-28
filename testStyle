@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <style>
+        .Tahoma {
+            font-family:Tahoma;
+            font-size:26px;
+            font-weight:bold;
+        }
+
+        .Deals {
+            font-family: Arial;
+            font-size: 26px;
+            font-weight: bold;
+            width:350px;
+        }
+        .end {
+            font-style: italic;
+            color: #f30707;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .Verdana{
+            font-family:Verdana;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        .Beginner{
+            color:gray;
+            font-weight:normal;
+            font-size:16px;
+        }
+
+        .course{
+            font-weight:normal;
+            font-size:15px;
+        }
+
+        .started{
+            border:none;
+            background:#1e810d;
+            color:white;
+            padding:8px 15px;
+            border-radius:7px;
+            margin-bottom:20px;
+        }
+
+        .Arial {
+            font-family: Arial;
+            font-size: 25px;
+            font-weight: bold;
+            text-align:center;
+        }
+
+        .See{
+            font-size:13px;
+        }
+
+        .Learn{
+            font-size:13px;
+            color:#2d5bb4;
+        }
+
+        .Learn:hover{
+            text-decoration:underline;
+            cursor:pointer;
+        }
+      
+
+    </style>
+
+
+    <p class="Tahoma">This is Tahoma Font</p>
+    
+    <p class="Deals">
+        Biggest Deals of the Year&#33
+        <span class="end">Sales end Tuesday</span>
+    </p>
+
+    <p class="Verdana">
+        HTML CSS Course
+        <br><span class="Beginner">Beginner to Pro</span>
+        <br><br><span class="course">In this course, we'll learn the skills <br> you need to become a developer.</span>
+        <br><br><button class="started"> Get Started</button>
+    </p>
+
+    <p class="Arial">
+        Shopping for your business&#63
+        <br><span class="See">See how Apple at Work can help.</span>
+        <br><span class="Learn">Learn more &#62</span>
+    </p>
+
+</body>
+</html>
